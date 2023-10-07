@@ -1,0 +1,44 @@
+body{
+    background-color: #3B413C;
+}
+
+main {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(25,50px);
+    background-color: #f0f0f0; /* Cambia el color de fondo */
+    /* border: 1px solid #ccc; Agrega un borde */
+}
+
+.heroBackground{
+    margin-block-start: 43px;
+    width: 100%;
+    height: 100%;
+    grid-area: 1 / 1 / 13 / 14 ;
+}
+
+nav{
+    grid-area: 1 / 1 / 1 / 14;
+    background-color: #94D1BE;
+    border-radius: 0 0 0.5em 0.5em ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.titleContainer{
+    grid-column: 7 / 11;
+    grid-row: 12 / 17;
+    /* grid-area: 14 / 6 / 1 / 13; */
+    color: #f0f0f0;
+    z-index: 2;
+    
+}
+
+.spaceSection{
+    background-color: #3B413C;
+    grid-area: 13 / 1 / 26 / 14 ;
+    /* z-index: -1; */
+}
