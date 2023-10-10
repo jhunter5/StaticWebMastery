@@ -1,21 +1,13 @@
 body{
-    background-color: #3B413C;
+    background-color: #181B18;
 }
 
 main {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: repeat(25,50px);
-    background-color: #f0f0f0; /* Cambia el color de fondo */
-    /* border: 1px solid #ccc; Agrega un borde */
-}
-
-.heroBackground{
-    margin-block-start: 43px;
-    width: 100%;
-    height: 100%;
-    grid-area: 1 / 1 / 13 / 14 ;
+    grid-template-rows: repeat(21,50px);
+    background-color: #f0f0f0; 
 }
 
 nav{
@@ -28,17 +20,80 @@ nav{
     padding: 1em;
 }
 
+.heroContainer{
+    grid-area: 1 / 1 / 16 / 14 ;
+    overflow: hidden;
+    /* border: 1px solid red;  */
+}
+
+.heroBackground{
+    width: 100%;
+    height: 100%; 
+}
+
 .titleContainer{
-    grid-column: 7 / 11;
-    grid-row: 12 / 17;
-    /* grid-area: 14 / 6 / 1 / 13; */
+    border: 1px solid red; 
+    grid-column: 5 / 10;
+    grid-row: 15 / 17;
     color: #f0f0f0;
     z-index: 2;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
 }
 
 .spaceSection{
-    background-color: #3B413C;
-    grid-area: 13 / 1 / 26 / 14 ;
-    /* z-index: -1; */
+    background-color: #181B18;
+    grid-area: 15 / 1 / 26 / 14 ;
+ } 
+
+.aboutUsTitle{
+    background-color: #181B18;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #f0f0f0;
+}
+
+.aboutUscontent{
+    background-color: #181B18;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #f0f0f0;
+}
+ 
+
+.servicesContainer{
+    background-color: #181B18;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: center;
+    color: #f0f0f0;
+}
+ 
+
+.ourServicesTittle{
+    background-color: #181B18;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #f0f0f0;
+}
+
+.ourServicesContent{
+    margin-block-start: 2em;
+    background-color: #181B18;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #f0f0f0;
+
 }
